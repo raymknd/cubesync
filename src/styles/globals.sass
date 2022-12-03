@@ -1,0 +1,26 @@
+@import 'scss-reset/_reset.scss'
+
+body
+  margin: 0
+  font-family: "Noto Sans", sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html[data-theme=auto]
+  &, body
+    @media (prefers-color-scheme: dark)
+      background: #181818
+      color: #fff
+    @media (prefers-color-scheme: light)
+      background: #fff
+      color: #333
+
+html[data-theme=light]
+  &, body
+    background: #fff
+    color: #333
+
+html[data-theme=dark]
+  &, body
+    background: #181818
+    color: #fff
