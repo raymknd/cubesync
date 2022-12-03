@@ -1,9 +1,7 @@
 import { useEffect } from "react";
 
 const useTheme = () => {
-    useEffect(() => {
-        
-    })
-}
+  useEffect(() => {});
+};
 
 export default useTheme;
